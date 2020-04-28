@@ -1,0 +1,33 @@
+.text-block {
+    height: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__heading {
+        font-size: 7vw;
+        color: $color-1;
+    }
+
+    &__line {
+        margin: 0 auto;
+        margin-bottom: 2vw;
+        height: 5px;
+        width: 12vw;
+        background-color: $color-1;
+    }
+
+    &__text {
+        width: 80%;
+        font-size: 1vw;
+        font-weight: 500;
+        color: $color-3;
+        text-align: left;
+    }
+
+    &__button {
+        margin-top: 4vw;
+        transition: 300ms ease-in-out;
+    }
+}

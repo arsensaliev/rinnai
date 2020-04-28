@@ -1,0 +1,14 @@
+/* setting styles start */
+@import './settings/common/common.scss';
+@import './settings/colors/colors.scss';
+@import './settings/media/media.scss';
+/* setting styles end */
+
+@import './blocks/header.scss';
+@import './blocks/welcome.scss';
+
+
+@import './components/nav-bar.scss';
+@import './components/support.scss';
+@import './components/text-block.scss';
+@import './components/button.scss';

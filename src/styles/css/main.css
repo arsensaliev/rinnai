@@ -1,0 +1,113 @@
+/* setting styles start */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; }
+
+/* setting styles end */
+.header {
+  position: absolute;
+  padding-right: 21.5vw;
+  width: 100vw;
+  height: 130px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; }
+
+.welcome {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/images/background-welcome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .welcome__text-block {
+    margin-right: 12vw;
+    width: 20vw; }
+  .welcome__extra {
+    margin-bottom: 2vw;
+    font-size: 1.25vw;
+    font-weight: 500;
+    color: #333333; }
+
+.nav-bar {
+  margin-right: 7vw;
+  width: 30vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .nav-bar__link {
+    font-size: 1vw;
+    color: #cf010e;
+    text-decoration: none; }
+    .nav-bar__link_active {
+      color: #333333; }
+
+.support {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .support__icon {
+    margin-right: 1vw;
+    font-size: 1.5vw;
+    color: white; }
+  .support__number {
+    font-size: 0.85vw;
+    color: white; }
+  .support__text {
+    font-size: 0.7vw;
+    color: white; }
+
+.text-block {
+  height: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  .text-block__heading {
+    font-size: 7vw;
+    color: #cf010e; }
+  .text-block__line {
+    margin: 0 auto;
+    margin-bottom: 2vw;
+    height: 5px;
+    width: 12vw;
+    background-color: #cf010e; }
+  .text-block__text {
+    width: 80%;
+    font-size: 1vw;
+    font-weight: 500;
+    color: #333333;
+    text-align: left; }
+  .text-block__button {
+    margin-top: 4vw;
+    transition: 300ms ease-in-out; }
+
+.button {
+  width: 230px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+  color: white;
+  text-decoration: none;
+  background-color: #cf010e; }
+  .button:hover {
+    color: #cf010e;
+    border: 2px solid #cf010e;
+    background-color: white; }
+
+/*# sourceMappingURL=main.css.map */
