@@ -6,11 +6,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 
     &__link {
         font-size: 1vw;
         color: $color-1;
         text-decoration: none;
+
+        // &:hover {
+        //     border-bottom: 1px solid $color-1;
+        // }
 
         &_active {
             color: $color-3;

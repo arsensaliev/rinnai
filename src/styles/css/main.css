@@ -24,18 +24,26 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  background-image: url("../../assets/images/background-welcome.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  align-items: center; }
   .welcome__text-block {
     margin-right: 12vw;
-    width: 20vw; }
+    width: 20vw;
+    z-index: 1; }
   .welcome__extra {
     margin-bottom: 2vw;
     font-size: 1.25vw;
     font-weight: 500;
-    color: #333333; }
+    color: #333333;
+    z-index: 1; }
+  .welcome__image {
+    z-index: 1; }
+  .welcome__background {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 34vw;
+    background-color: #cf010e;
+    z-index: 0; }
 
 .nav-bar {
   margin-right: 7vw;
@@ -44,7 +52,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  z-index: 1; }
   .nav-bar__link {
     font-size: 1vw;
     color: #cf010e;
@@ -58,7 +67,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 1; }
   .support__icon {
     margin-right: 1vw;
     font-size: 1.5vw;

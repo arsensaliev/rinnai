@@ -5,13 +5,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url('../../assets/images/background-welcome.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url('../../assets/images/background-welcome.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
 
     &__text-block {
         margin-right: 12vw;
         width: 20vw;
+        z-index: 1;
     }
 
     &__extra {
@@ -19,5 +20,19 @@
         font-size: 1.25vw;
         font-weight: 500;
         color: $color-3;
+        z-index: 1;
+    }
+
+    &__image {
+        z-index: 1;
+    }
+
+    &__background {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 34vw;
+        background-color: $color-1;
+        z-index: 0;
     }
 }
