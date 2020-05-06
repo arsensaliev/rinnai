@@ -1,0 +1,17 @@
+.fact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+
+    &__number {
+        font-size: 6vw;
+        font-weight: bold;
+    }
+
+    &__text {
+        font-size: 1.5vw;
+        font-weight: 300;
+    }
+}
