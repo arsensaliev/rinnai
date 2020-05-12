@@ -1,4 +1,4 @@
-.support {
+.contact {
     width: auto;
     height: 100%;
     display: flex;
@@ -9,8 +9,9 @@
 
     &__icon {
         margin-right: 1vw;
-        font-size: 1.5vw;
-        color: $color-2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__number {
