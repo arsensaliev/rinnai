@@ -1,0 +1,27 @@
+.comparison {
+    padding: 3vw 10vw;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $color-3;
+
+    &__heading {
+        margin-left: 10vw;
+        font-size: 2.5vw;
+        font-weight: 300;
+        color: $color-2;
+    }
+
+    &__burners {
+        margin: auto;
+        margin-top: 3vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}

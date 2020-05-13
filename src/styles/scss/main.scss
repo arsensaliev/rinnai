@@ -1,0 +1,30 @@
+/* setting styles start */
+@import './settings/common/common.scss';
+@import './settings/colors/colors.scss';
+@import './settings/media/media.scss';
+/* setting styles end */
+
+/* blocks styles start */
+@import './blocks/header.scss';
+@import './blocks/welcome.scss';
+@import './blocks/why.scss';
+@import './blocks/advantages.scss';
+@import './blocks/comparison.scss';
+@import './blocks/about.scss';
+@import './blocks/region.scss';
+@import './blocks/service.scss';
+@import './blocks/support.scss';
+@import './blocks/footer.scss';
+/* blocks styles end */
+
+/* components styles start */
+@import './components/nav-bar.scss';
+@import './components/contact.scss';
+@import './components/text-block.scss';
+@import './components/button.scss';
+@import './components/advantage.scss';
+@import './components/compared.scss';
+@import './components/fact.scss';
+@import './components/service-function.scss';
+@import './components/form.scss';
+/* components styles end */

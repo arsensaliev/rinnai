@@ -1,0 +1,12 @@
+.advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__heading {
+        margin-bottom: 5vw;
+        font-size: 3vw;
+        color: $color-1;
+    }
+}
