@@ -33,4 +33,15 @@
         background-color: $color-1;
         z-index: 0;
     }
+
+    @media(max-width: $xl) {
+        &__extra {
+            font-size: 1.4vw;
+        }
+
+        &__text-block {
+            margin-right: 10vw;
+            width: 22vw;
+        }
+    }
 }

@@ -1,5 +1,4 @@
 .nav-bar {
-    margin-right: 7vw;
     width: 30vw;
     height: 100%;
     display: flex;
@@ -13,12 +12,16 @@
         color: $color-1;
         text-decoration: none;
 
-        // &:hover {
-        //     border-bottom: 1px solid $color-1;
-        // }
-
         &_active {
             color: $color-3;
+        }
+    }
+
+    @media(max-width: $xl) {
+        width: 35vw;
+
+        &__link {
+            font-size: 1.2vw;
         }
     }
 }

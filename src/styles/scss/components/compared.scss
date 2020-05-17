@@ -6,9 +6,11 @@
     align-items: center;
 
     &__image {
+        width: 100%;
         filter: drop-shadow(0 0 30px $color-4);
 
         &-container {
+            width: 10vw;
             filter: drop-shadow(0 0 20px $color-4);
         }
     }
@@ -43,6 +45,29 @@
 
         &_common {
             width: 18vw;
+        }
+    }
+
+    @media(max-width: $xl) {
+        &__heading {
+            font-size: 2.2vw;
+        }
+
+        &__text {
+            width: 50vw;
+        }
+
+        &__description {
+            width: 30vw;
+            font-size: 1.1vw;
+
+            &_common {
+                width: 25vw !important;
+            }
+        }
+
+        &__image-container {
+            // width: 20vw;
         }
     }
 }

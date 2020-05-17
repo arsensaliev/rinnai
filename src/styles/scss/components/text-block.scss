@@ -19,7 +19,8 @@
     }
 
     &__text {
-        width: 80%;
+        // width: 80%;
+        width: auto;
         font-size: 1vw;
         font-weight: 500;
         color: $color-3;
@@ -28,7 +29,24 @@
 
     &__button {
         margin-top: 4vw;
-        width: 15vw !important;
+        height: 3vw !important;
+        width: 13vw !important;
         transition: 300ms ease-in-out;
+    }
+
+    @media(max-width: $xl) {
+        &__heading {
+            font-size: 8vw;
+        }
+
+        &__text {
+            font-size: 1.2vw;
+        }
+
+        &__button {
+            height: 3.5vw !important;
+            width: 15vw !important;
+            font-size: 1.2vw !important;
+        }
     }
 }

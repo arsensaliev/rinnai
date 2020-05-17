@@ -63,4 +63,12 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    @media(max-width: $xl) {
+        &__description {
+            &-part {
+                font-size: 1.7vw;
+            }
+        }
+    }
 }

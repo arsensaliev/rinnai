@@ -9,4 +9,10 @@
         font-size: 3vw;
         color: $color-1;
     }
+
+    @media(max-width: $xl) {
+        &__heading {
+            margin-bottom: 3vw;
+        }
+    }
 }

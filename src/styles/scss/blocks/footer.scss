@@ -54,4 +54,17 @@
         color: $color-2;
         background-color: $color-8;
     }
+
+    @media(max-width: $xl) {
+        &__contact {
+            &-text {
+                font-size: 1.3vw;
+            }
+        }
+
+        &__contacts {
+            margin-right: 3vw;
+            width: auto;
+        }
+    }
 }
