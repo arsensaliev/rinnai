@@ -15,4 +15,16 @@
             margin-bottom: 3vw;
         }
     }
+
+    @media(max-width: $lg) {
+        margin: 0;
+        margin-bottom: 10vw;
+        width: auto;
+        justify-content: center;
+
+        &__heading {
+            margin-bottom: 10vw;
+            font-size: 10vw;
+        }
+    }
 }

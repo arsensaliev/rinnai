@@ -57,6 +57,21 @@
     .welcome__text-block {
       margin-right: 10vw;
       width: 22vw; } }
+  @media (max-width: 1024px) {
+    .welcome {
+      flex-direction: column; }
+      .welcome__background {
+        display: none; }
+      .welcome__text-block {
+        margin: 0;
+        margin-bottom: 5vh;
+        width: 30vw; }
+      .welcome__extra {
+        font-size: 3vw;
+        text-align: center; }
+      .welcome__image {
+        height: 45vh !important;
+        width: auto !important; } }
 
 .why {
   width: 100%;
@@ -69,6 +84,12 @@
   .why__advantages {
     margin-top: 6vw;
     width: 40%; }
+  @media (max-width: 1024px) {
+    .why {
+      justify-content: center;
+      align-items: center; }
+      .why__image {
+        display: none; } }
 
 .advantages {
   display: flex;
@@ -82,6 +103,15 @@
   @media (max-width: 1330px) {
     .advantages__heading {
       margin-bottom: 3vw; } }
+  @media (max-width: 1024px) {
+    .advantages {
+      margin: 0;
+      margin-bottom: 10vw;
+      width: auto;
+      justify-content: center; }
+      .advantages__heading {
+        margin-bottom: 10vw;
+        font-size: 10vw; } }
 
 .comparison {
   padding: 3vw 10vw;
@@ -315,6 +345,17 @@
       width: 35vw; }
       .nav-bar__link {
         font-size: 1.2vw; } }
+  @media (max-width: 1024px) {
+    .nav-bar {
+      margin-top: 13vh;
+      margin-left: 5vw;
+      height: 30vh;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between; }
+      .nav-bar__link {
+        font-size: 4vw;
+        letter-spacing: 0.3vw; } }
 
 .contact {
   width: auto;
@@ -376,6 +417,25 @@
       height: 3.5vw !important;
       width: 15vw !important;
       font-size: 1.2vw !important; } }
+  @media (max-width: 1024px) {
+    .text-block {
+      width: auto;
+      height: auto;
+      justify-content: center;
+      align-items: center; }
+      .text-block__heading {
+        font-size: 13vw; }
+      .text-block__text {
+        width: 50%;
+        font-size: 2.7vw;
+        text-align: center; }
+      .text-block__line {
+        margin-bottom: 2vh;
+        width: 27vw !important; }
+      .text-block__button {
+        height: 6vw !important;
+        width: 30vw !important;
+        font-size: 2.5vw !important; } }
 
 .button {
   width: 230px;
@@ -432,6 +492,21 @@
         font-size: 2.2vw; }
       .advantage__text {
         font-size: 1.2vw; } }
+  @media (max-width: 1024px) {
+    .advantage {
+      margin-bottom: 5vw;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .advantage__description {
+        width: 75%; }
+      .advantage__heading {
+        font-size: 5vw; }
+      .advantage__text {
+        font-size: 2.5vw; }
+      .advantage__image-container {
+        height: 10vw;
+        width: 10vw; } }
 
 .compared {
   width: 40vw;
@@ -554,6 +629,55 @@
   @media (max-width: 1330px) {
     .form__description {
       font-size: 1.1vw; } }
+
+.trigger {
+  display: none; }
+
+@media (max-width: 1024px) {
+  .show {
+    right: 0 !important; }
+  .trigger {
+    position: fixed;
+    right: 3%;
+    margin: 3px;
+    padding: 5px 7px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cf010e;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+    z-index: 5; }
+    .trigger__icon {
+      position: absolute;
+      font-size: 4vw;
+      color: white;
+      opacity: 0;
+      transition: 400ms; }
+      .trigger__icon_active {
+        opacity: 1; }
+  .header__container {
+    position: fixed;
+    top: 0;
+    right: -35%;
+    height: 100vh;
+    width: 32%;
+    display: block;
+    color: white;
+    background-color: #cf010e;
+    transition: 400ms ease-in-out;
+    z-index: 3; }
+  .trigger-move {
+    right: 35%; }
+    .trigger-move .trigger__icon {
+      color: white; }
+  .header__nav-component {
+    color: white; }
+    .header__nav-component:hover {
+      opacity: 1; } }
 
 /* components styles end */
 

@@ -44,4 +44,28 @@
             width: 22vw;
         }
     }
+
+    @media(max-width: $lg) {
+        flex-direction: column;
+
+        &__background {
+            display: none;
+        }
+
+        &__text-block {
+            margin: 0;
+            margin-bottom: 5vh;
+            width: 30vw;
+        }
+
+        &__extra {
+            font-size: 3vw;
+            text-align: center;
+        }
+
+        &__image {
+            height: 45vh !important;
+            width: auto !important;
+        }
+    }
 }

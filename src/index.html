@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/favicon (1).ico">
+    <script src="https://kit.fontawesome.com/d125a684cc.js" crossorigin="anonymous"></script>
     <title>Rinnai - газовые котлы для вашего дома</title>
 </head>
 
@@ -14,12 +15,18 @@
 
 
     <header class="header">
-        <nav class="nav-bar">
-            <a href="#" class="nav-bar__link nav-bar__link_active">Главная</a>
-            <a href="#" class="nav-bar__link">Котлы</a>
-            <a href="#" class="nav-bar__link">О нас</a>
-            <a href="#" class="nav-bar__link">Сервис</a>
-        </nav>
+        <div id="trigger" class="trigger">
+            <i class="fas fa-bars trigger__icon trigger__icon_active" id="trigger__icon-menu"></i>
+            <i class="fas fa-times trigger__icon" id="trigger__icon-cross"></i>
+        </div>
+        <div class="header__container" id="header__container">
+            <nav class="header__nav-bar nav-bar">
+                <a href="#" class="nav-bar__link header__nav-component nav-bar__link_active">Главная</a>
+                <a href="#" class="nav-bar__link header__nav-component">Котлы</a>
+                <a href="#" class="nav-bar__link header__nav-component">О нас</a>
+                <a href="#" class="nav-bar__link header__nav-component">Сервис</a>
+            </nav>
+        </div>
         <div class="header__contact contact">
             <img src="./assets/images/contact__header.png" alt="Позвоните нам!" class="contact__icon">
             <div class="contact__info">
@@ -244,6 +251,6 @@
         <div class="footer__logo">Rinnai</div>
     </footer>
 
-
+    <script src="./scripts/burger-menu.js"></script>
 </body>
 </html>
