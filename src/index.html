@@ -21,10 +21,10 @@
         </div>
         <div class="header__container" id="header__container">
             <nav class="header__nav-bar nav-bar">
-                <a href="#" class="nav-bar__link header__nav-component nav-bar__link_active">Главная</a>
-                <a href="#" class="nav-bar__link header__nav-component">Котлы</a>
-                <a href="#" class="nav-bar__link header__nav-component">О нас</a>
-                <a href="#" class="nav-bar__link header__nav-component">Сервис</a>
+                <a href="#welcome" class="nav-bar__link header__nav-component nav-bar__link_active">Главная</a>
+                <a href="#why" class="nav-bar__link header__nav-component">Почему</a>
+                <a href="#service" class="nav-bar__link header__nav-component">Сервис</a>
+                <a href="#about" class="nav-bar__link header__nav-component">О нас</a>
             </nav>
         </div>
         <div class="header__contact contact">
@@ -37,7 +37,7 @@
     </header>
 
 
-    <section class="welcome">
+    <section class="welcome" id="welcome">
         <div class="welcome__text-block text-block">
             <h1 class="text-block__heading">Rinnai</h1>
             <div class="welcome__extra">Газовые котлы для вашего дома</div>
@@ -51,7 +51,7 @@
     </section>
 
 
-    <section class="why">
+    <section class="why" id="why">
         <img src="./assets/images/advantages_background.jpg" alt="Почему Rinnai?" class="why__image">
         <div class="why__advantages advantages">
             <h2 class="advantages__heading">Почему Rinnai?</h2>
@@ -124,13 +124,47 @@
     </section>
 
 
-    <section class="about">
-        <img src="./assets/images/about_background.jpg" alt="Rinnai" class="about__background-image">
+    <section class="service" id="service">
+        <h2 class="service__heading">Наш сервис</h2>
+        <div class="service__cards">
+            <div class="card">
+                <div class="card__preview card__part">
+                    <i class="fas fa-tools card__icon"></i>
+                    <h3 class="card__preview-heading">Профессиональный ремонт и установка</h3>
+                </div>
+                <div class="card__info card__part">
+                    <p class="card__info-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut illo nobis similique magnam, architecto harum dicta, cum ducimus quo deleniti quae quis quia veritatis at ad nam ullam? Facilis, tempore?</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__preview card__part">
+                    <i class="far fa-check-circle card__icon"></i>
+                    <h3 class="card__preview-heading">Качественное обслуживание котлов</h3>
+                </div>
+                <div class="card__info card__part">
+                    <p class="card__info-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut illo nobis similique magnam, architecto harum dicta, cum ducimus quo deleniti quae quis quia veritatis at ad nam ullam? Facilis, tempore?</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__preview card__part">
+                    <i class="fas fa-headset card__icon"></i>
+                    <h3 class="card__preview-heading">Всегда на связи с вами</h3>
+                </div>
+                <div class="card__info card__part">
+                    <p class="card__info-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut illo nobis similique magnam, architecto harum dicta, cum ducimus quo deleniti quae quis quia veritatis at ad nam ullam? Facilis, tempore?</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="service__button button">Получить помощь</a>
+    </section>
+
+
+    <section class="about" id="about">
         <div class="about__red-background"></div>
         <div class="about__content">
             <h2 class="about__heading">О компании</h2>
             <div class="about__description">
-                <div class="about__description-part about__description-first">Сегодня Rinnai крупнейший в мире
+                    Сегодня Rinnai крупнейший в мире
                     производитель
                     газового оборудования со штаб-квартирой в Японии
                     и сетью из 20 филиалов и 86 офисов продаж в 13 странах.
@@ -139,16 +173,14 @@
                     качеством посредством собственного проектирования,
                     разработок и производства продукции.
                     Компания постоянно совершенствует инновационные
-                </div>
-                <div class="about__description-part about__description-second">системы подогрева воды и отопительных
-                    приборов для
-                    жилых и коммерческих помещений. В результате
+                    системы подогрева воды и отопительных
+                    приборов для жилых и коммерческих помещений. В результате
                     продукция Rinnai возглавляет отрасль высококлассного
                     оборудования для систем отопления и горячего
                     водоснабжения. Эффективная производительность и
                     качество оборудования делают газовые котлы и
                     водонагреватели Rinnai одними из лучших
-                    водонагревателей и котлов на мировом рынке.</div>
+                    водонагревателей и котлов на мировом рынке.
             </div>
             <div class="about__facts">
                 <div class="about__fact fact">
@@ -187,29 +219,6 @@
     </section>
 
 
-    <section class="service">
-        <h2 class="service__heading">Наш сервис</h2>
-        <div class="service__functions">
-            <div class="service-function">
-                <img src="./assets/images/advantage_repair.png" alt="Профессиональный ремонт и установка"
-                    class="service-function__icon">
-                <div class="service-function__text">Профессиональный ремонт и установка</div>
-            </div>
-            <div class="service-function">
-                <img src="./assets/images/advantage_service.png" alt="Качественное обслуживание котлов"
-                    class="service-function__icon">
-                <div class="service-function__text">Качественное обслуживание котлов</div>
-            </div>
-            <div class="service-function">
-                <img src="./assets/images/advantage__support.png" alt="Всегда на связи с вами"
-                    class="service-function__icon">
-                <div class="service-function__text">Всегда на связи с вами</div>
-            </div>
-        </div>
-        <a href="#" class="service__button button">Получить помощь</a>
-    </section>
-
-
     <section class="support">
         <form action="#" class="support__form form">
             <div class="form__text">
@@ -233,15 +242,15 @@
             <div class="footer__contacts">
                 <div class="footer__contacts-text">
                     <div class="footer__contact-adress footer__contact">
-                        <img src="./assets/images/icons/footer__contacts-adress.png" alt="адрес" class="footer__contact-image">
+                        <i class="fas fa-map-marker-alt footer__contact-icon"></i>
                         <div class="footer__contact-text">г. Тараз ул, Ташкенская 2999</div>
                     </div>
                     <div class="footer__contact-phone footer__contact">
-                        <img src="./assets/images/icons/footer__contacts-phone.png" alt="номер" class="footer__contact-image">
+                        <i class="fas fa-phone-alt footer__contact-icon"></i>
                         <div class="footer__contact-text">+7 705 977-22-77</div>
                     </div>
                     <div class="footer__contact-email footer__contact">
-                        <img src="./assets/images/icons/footer__contacts-email.png" alt="gmail" class="footer__contact-image">
+                        <i class="far fa-envelope footer__contact-icon"></i>
                         <div class="footer__contact-text">example@gmail.com</div>
                     </div>
                 </div>

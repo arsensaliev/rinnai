@@ -33,13 +33,12 @@
         width: 35vh;
         box-sizing: border-box;
         font-size: 1vw;
-        border-radius: 5px; 
     }
 
     &__button {
-        width: 25vh;
-        font-size: 1.3vw;
-        border-radius: 5px;
+        height: 2.5vw !important;
+        width: 12vw !important;
+        font-size: 1.1vw;
         transition: 300ms ease-in-out !important;
         cursor: pointer;
 
