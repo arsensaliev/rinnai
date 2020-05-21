@@ -56,6 +56,7 @@
             margin: 0;
             margin-bottom: 5vh;
             width: 30vw;
+            order: 1;
         }
 
         &__extra {
@@ -64,8 +65,10 @@
         }
 
         &__image {
+            margin-bottom: 5vh;
             height: 45vh !important;
             width: auto !important;
+            order: 0;
         }
     }
 }

@@ -117,7 +117,7 @@
         }
     }
 
-    @media(max-width: 20px) {
+    @media(max-width: 3px) { // условно
 
         max-width: 450px;
 
@@ -141,19 +141,20 @@
         }
     }
 
-    @media(max-width: 10px) {
+    @media(max-width: $lg) {
 
         &__preview {
-
             height: 45vw;
-
-            &-icon {
-                font-size: 20vw;
-            }
+            color: $color-2;
+            background-color: $color-6;
 
             &-heading {
                 font-size: 5vw;
             }
+        }
+
+        &__icon {
+            font-size: 15vw;
         }
 
         &__info {

@@ -25,8 +25,8 @@
 
     &__button {
         margin-bottom: 2vw;
+        height: 3vw !important;
         width: 15vw !important;
-        height: 3.5vw !important;
         font-size: 1.1vw !important;
         color: $color-2 !important;
         background-color: $color-1 !important;
@@ -36,6 +36,27 @@
             color: $color-1 !important;
             border: 2px solid $color-1 !important;
             background-color: $color-2 !important;
+        }
+    }
+
+    @media(max-width: $xl) {
+
+        &__cards {
+            margin-bottom: 0;
+            flex-direction: column;
+        }
+    }
+
+    @media(max-width: $lg) {
+        &__heading {
+            font-size: 8vw;
+        }
+
+        &__button {
+            margin-top: -1vh !important;
+            height: 10vw !important;
+            width: 40vw !important;
+            font-size: 3vw !important;
         }
     }
 }

@@ -1,4 +1,5 @@
 .why {
+    max-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -6,11 +7,12 @@
     align-items: flex-start;
 
     &__image {
-        width: 60%;
+        max-width: 60%;
+        max-height: 100vh;
     }
 
     &__advantages {
-        margin-top: 6vw;
+        margin-top: 3vw;
         // height: 60vw;
         width: 40%;
     }

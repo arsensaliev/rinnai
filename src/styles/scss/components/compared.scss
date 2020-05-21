@@ -1,5 +1,6 @@
 .compared {
     width: 40vw;
+    max-width: 800px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -10,7 +11,7 @@
         filter: drop-shadow(0 0 30px $color-4);
 
         &-container {
-            width: 10vw;
+            width: 8vw;
             filter: drop-shadow(0 0 20px $color-4);
         }
     }
@@ -63,6 +64,32 @@
 
             &_common {
                 width: 25vw !important;
+            }
+        }
+    }
+
+    @media(max-width: $lg) {
+        margin-bottom: 5vw !important;
+        width: 100vw;
+        max-width: none;
+
+        &__heading {
+            font-size: 6vw;
+        }
+
+        &__description {
+            width: 100%;
+            font-size: 2.5vw;
+
+            &_common {
+                width: 100% !important;
+            }
+        }
+
+        &__image {
+            &-container {
+                margin-right: 3vw;
+                width: 15vw;
             }
         }
     }

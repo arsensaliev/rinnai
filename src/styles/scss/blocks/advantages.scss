@@ -1,11 +1,13 @@
 .advantages {
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 
     &__heading {
-        margin-bottom: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 3vw;
         font-size: 3vw;
         color: $color-1;
     }
@@ -19,12 +21,12 @@
     @media(max-width: $lg) {
         margin: 0;
         margin-bottom: 10vw;
-        width: auto;
+        max-width: 80%;
         justify-content: center;
 
         &__heading {
             margin-bottom: 10vw;
-            font-size: 10vw;
+            font-size: 8vw;
         }
     }
 }
