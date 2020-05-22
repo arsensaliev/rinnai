@@ -20,4 +20,14 @@
             font-size: 1.8vw;
         }
     }
+
+    @media(max-width: $lg) {
+        &__number {
+            font-size: 8vw;
+        }
+
+        &__text {
+            font-size: 3vw;
+        }
+    }
 }

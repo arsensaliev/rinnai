@@ -9,4 +9,9 @@
     background-image: url(../../assets/images/support__background.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media(max-width: $lg) {
+        height: auto;
+        background-image: none;
+    }
 }

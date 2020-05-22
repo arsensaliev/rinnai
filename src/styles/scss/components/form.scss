@@ -55,4 +55,17 @@
             font-size: 1.1vw;
         }
     }
+
+    @media(max-width: $lg) {
+
+        &__heading {
+            margin-top: 10vw;
+            font-size: 8vw;
+        }
+
+        &__description {
+            width: 60%;
+            font-size: 2vw;
+        }
+    }
 }

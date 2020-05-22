@@ -64,4 +64,30 @@
             }
         }
     }
+
+    @media(max-width: $lg) {
+        // background-size: cover;
+
+        &__heading {
+            font-size: 8vw;
+        }
+
+        &__content {
+            height: 100vw;
+        }
+
+        &__red-background {
+            height: 100vw;
+        }
+
+        &__description {
+            width: 90%;
+            font-size: 3vw;
+        }
+
+        &__facts {
+            margin-bottom: 5vw;
+            width: 80%;
+        }
+    }
 }
