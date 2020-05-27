@@ -65,13 +65,12 @@
       .welcome__text-block {
         margin: 0;
         margin-bottom: 5vh;
-        width: 30vw;
+        width: 30%;
         order: 1; }
       .welcome__extra {
         font-size: 3vw;
         text-align: center; }
       .welcome__image {
-        margin-bottom: 5vh;
         height: 45vh !important;
         width: auto !important;
         order: 0; } }
@@ -100,7 +99,7 @@
   width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center; }
   .advantages__heading {
     margin-right: 5vw;
@@ -108,16 +107,16 @@
     font-size: 3vw;
     color: #cf010e; }
   @media (max-width: 1330px) {
-    .advantages__heading {
-      margin-bottom: 3vw; } }
+    .advantages {
+      justify-content: center; }
+      .advantages__heading {
+        margin-bottom: 3vw; } }
   @media (max-width: 1024px) {
     .advantages {
       margin: 0;
-      margin-bottom: 10vw;
-      max-width: 80%;
-      justify-content: center; }
+      max-width: 80%; }
       .advantages__heading {
-        margin-bottom: 10vw;
+        margin-bottom: 5vw;
         font-size: 8vw; } }
 
 .comparison {
@@ -142,7 +141,7 @@
       padding: 0;
       padding-top: 5vw; }
       .comparison__burners {
-        width: 100vw;
+        width: 100%;
         max-width: 100vw;
         flex-direction: column; } }
 
@@ -203,7 +202,7 @@
       height: 100vw; }
     .about__description {
       width: 90%;
-      font-size: 3vw; }
+      font-size: 2.5vw; }
     .about__facts {
       margin-bottom: 5vw;
       width: 80%; } }
@@ -240,7 +239,7 @@
       color: #cf010e; }
   .region__image {
     width: 50%;
-    height: 40vw;
+    height: 25vw;
     background-image: url(../../assets/images/region_background.png);
     background-position: right;
     background-repeat: no-repeat;
@@ -299,14 +298,12 @@
       color: #cf010e !important;
       border: 2px solid #cf010e !important;
       background-color: white !important; }
-  @media (max-width: 1330px) {
-    .service__cards {
-      margin-bottom: 0;
-      flex-direction: column; } }
   @media (max-width: 1024px) {
     .service {
       justify-content: center;
       margin-bottom: 5vw; }
+      .service__cards {
+        flex-direction: column; }
       .service__heading {
         font-size: 8vw; }
       .service__button {
@@ -380,6 +377,22 @@
     .footer__contacts {
       margin-right: 3vw;
       width: auto; } }
+  @media (max-width: 1024px) {
+    .footer__content {
+      flex-direction: column; }
+    .footer__contact {
+      margin-left: 5vw; }
+      .footer__contact-icon {
+        margin-right: 3vw;
+        font-size: 5vw; }
+      .footer__contact-text {
+        margin: none;
+        font-size: 2.5vw; }
+    .footer__map {
+      height: 30vw;
+      width: 50vw; }
+    .footer__logo {
+      height: 7vw; } }
 
 /* blocks styles end */
 /* components styles start */
@@ -407,6 +420,7 @@
       margin-top: 13vh;
       margin-left: 5vw;
       height: 30vh;
+      width: auto;
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between; }
@@ -464,7 +478,7 @@
     text-align: left; }
   .text-block__button {
     margin-top: 4vw;
-    height: 4vw !important;
+    height: 3vw !important;
     width: 13vw !important;
     transition: 300ms ease-in-out; }
   @media (max-width: 1330px) {
@@ -616,7 +630,7 @@
   @media (max-width: 1024px) {
     .compared {
       margin-bottom: 5vw !important;
-      width: 100vw;
+      width: 100%;
       max-width: none; }
       .compared__heading {
         font-size: 6vw; }
@@ -651,7 +665,7 @@
       font-size: 3vw; } }
 
 .form {
-  height: 100%;
+  height: 100vw;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -698,17 +712,26 @@
       font-size: 8vw; }
     .form__description {
       width: 60%;
-      font-size: 2vw; } }
+      font-size: 2.2vw; }
+    .form__text {
+      margin-bottom: 5vw; }
+    .form__input {
+      margin-bottom: 3vw !important;
+      font-size: 2.5vw !important; }
+    .form__button {
+      margin-bottom: 5vw;
+      height: 6vw !important;
+      width: 23vw !important;
+      font-size: 2.3vw; } }
 
 .trigger {
   display: none; }
 
 @media (max-width: 1024px) {
   .show {
-    right: 0 !important; }
+    right: 0% !important; }
   .trigger {
     position: fixed;
-    top: 3%;
     right: 5%;
     margin: 3px;
     padding: 5px 7px;
@@ -723,7 +746,7 @@
     transition: 400ms ease-in-out;
     z-index: 5; }
     .trigger__icon {
-      position: absolute;
+      position: fixed;
       font-size: 4vw;
       color: white;
       opacity: 0;
@@ -803,10 +826,10 @@
       font-size: 1.1vw;
       color: #cf010e;
       line-height: 1.2; }
-  @media (max-width: 1330px) {
+  @media (max-width: 1024px) {
     .card {
       margin-bottom: 5vh;
-      width: 100%; }
+      width: 80%; }
       .card:hover .card__preview {
         color: #cf010e;
         background-color: #db333d; }
@@ -815,39 +838,24 @@
       .card__preview {
         height: 330px;
         transform: translateY(0); }
-        .card__preview-icon {
-          font-size: 130px; }
         .card__preview-heading {
-          font-size: 40px; }
+          font-size: 2vw; }
       .card__info {
         height: auto !important;
         transform: translateY(0); }
         .card__info-description {
-          font-size: 30px; }
+          font-size: 1vw; }
       .card__button {
-        margin-top: 2vh; } }
-  @media (max-width: 3px) {
-    .card {
-      max-width: 450px; }
+        margin-top: 2vh; }
       .card__preview {
-        height: 230px; }
-        .card__preview-icon {
-          font-size: 100px; }
+        color: white;
+        background-color: #e8233e; }
         .card__preview-heading {
-          font-size: 30px; }
+          font-size: 4vw; }
+      .card__icon {
+        font-size: 12vw; }
       .card__info-description {
-        font-size: 20px; } }
-  @media (max-width: 1024px) {
-    .card__preview {
-      height: 45vw;
-      color: white;
-      background-color: #e8233e; }
-      .card__preview-heading {
-        font-size: 5vw; }
-    .card__icon {
-      font-size: 15vw; }
-    .card__info-description {
-      font-size: 4vw; } }
+        font-size: 2.7vw; } }
 
 /* components styles end */
 

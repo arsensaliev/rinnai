@@ -2,7 +2,7 @@
     width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     &__heading {
@@ -13,6 +13,8 @@
     }
 
     @media(max-width: $xl) {
+        justify-content: center;
+
         &__heading {
             margin-bottom: 3vw;
         }
@@ -20,12 +22,10 @@
 
     @media(max-width: $lg) {
         margin: 0;
-        margin-bottom: 10vw;
         max-width: 80%;
-        justify-content: center;
 
         &__heading {
-            margin-bottom: 10vw;
+            margin-bottom: 5vw;
             font-size: 8vw;
         }
     }

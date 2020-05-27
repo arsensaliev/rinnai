@@ -39,17 +39,13 @@
         }
     }
 
-    @media(max-width: $xl) {
-
-        &__cards {
-            margin-bottom: 0;
-            flex-direction: column;
-        }
-    }
-
     @media(max-width: $lg) {
         justify-content: center;
         margin-bottom: 5vw;
+
+        &__cards {
+            flex-direction: column;
+        }
 
         &__heading {
             font-size: 8vw;

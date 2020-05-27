@@ -73,10 +73,10 @@
         }
     }
 
-    @media(max-width: $xl) {
+    @media(max-width: $lg) {
 
         margin-bottom: 5vh;
-        width: 100%;
+        width: 80%;
 
         &:hover {
             
@@ -94,12 +94,8 @@
             height: 330px;
             transform: translateY(0);
 
-            &-icon {
-                font-size: 130px;
-            }
-
             &-heading {
-                font-size: 40px;
+                font-size: 2vw;
             }
         }
 
@@ -108,59 +104,34 @@
             transform: translateY(0);
 
             &-description {
-                font-size: 30px;
+                font-size: 1vw;
             }
         }
 
         &__button {
             margin-top: 2vh;
         }
-    }
 
-    @media(max-width: 3px) { // условно
 
-        max-width: 450px;
 
         &__preview {
-            height: 230px;
-
-            &-icon {
-                font-size: 100px;
-            }
-
-            &-heading {
-                font-size: 30px;
-            }
-        }
-
-        &__info {
-
-            &-description {
-                font-size: 20px;
-            }
-        }
-    }
-
-    @media(max-width: $lg) {
-
-        &__preview {
-            height: 45vw;
+            // height: 45vw;
             color: $color-2;
             background-color: $color-6;
 
             &-heading {
-                font-size: 5vw;
+                font-size: 4vw;
             }
         }
 
         &__icon {
-            font-size: 15vw;
+            font-size: 12vw;
         }
 
         &__info {
 
             &-description {
-                font-size: 4vw;
+                font-size: 2.7vw;
             }
         }
     }

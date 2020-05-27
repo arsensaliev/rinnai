@@ -5,12 +5,11 @@
     @media (max-width: $lg) { 
 
       .show {
-        right: 0 !important;
+        right: 0% !important;
       }
 
       .trigger {
         position: fixed;
-        top: 3%;
         right: 5%;
         margin: 3px;
         padding: 5px 7px;
@@ -26,7 +25,7 @@
         z-index: 5;
   
         &__icon {
-          position: absolute;
+          position: fixed;
           font-size: 4vw;
           color: $color-2;
           opacity: 0;
