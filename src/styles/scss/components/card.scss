@@ -50,7 +50,7 @@
 
         &-heading {
             width: 80%;
-            font-size: 25px;
+            font-size: 1.8vw;
             font-weight: bold;
             text-align: center;
         }
@@ -73,26 +73,54 @@
         }
     }
 
+    @media(max-width: $xl) {
+        // &__preview {
+        //     &-heading {
+        //         font-size: 1.5vw;
+        //     }
+        // }
+
+        &__icon {
+            font-size: 5vw;
+        }
+    }
+
     @media(max-width: $lg) {
 
         margin-bottom: 5vh;
         width: 80%;
+        transition: 0;
 
         &:hover {
             
-            .card__preview {
-                color: $color-1;
-                background-color: $color-4;
+            .card {
+                &__preview {
+                    color: $color-1;
+                    background-color: $color-6;
+                    cursor: default;
+
+                    &-heading {
+                        color: $color-2;
+                    }
+                }
+
+                &__icon {
+                    color: $color-2;
+                    transition: 0;
+                }
             }
+
         }
 
         &__part {
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            cursor: default;
         }
 
         &__preview {
-            height: 330px;
+            height: 35vw;
             transform: translateY(0);
+            transition: 0s !important;
 
             &-heading {
                 font-size: 2vw;
@@ -132,6 +160,22 @@
 
             &-description {
                 font-size: 2.7vw;
+            }
+        }
+    }
+
+    @media(max-width: $md) {
+        width: 100%;
+
+        &__preview {
+            &-heading {
+                font-size: 5vw;
+            }
+        }
+
+        &__info {
+            &-description {
+                font-size: 3.5vw;
             }
         }
     }

@@ -29,4 +29,8 @@
             flex-direction: column;
         }
     }
+
+    @media(max-width: $md) {
+        padding-top: 10vw;
+    }
 }

@@ -82,4 +82,20 @@
             }
         }
     }
+
+    @media(max-width: $md) {
+        &__image {
+            &-container {
+                margin-right: 15px;
+            }
+        }
+
+        &__heading {
+            font-size: 6vw;
+        }
+
+        &__text {
+            font-size: 3.5vw;
+        }
+    }
 }

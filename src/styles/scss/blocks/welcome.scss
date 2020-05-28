@@ -70,4 +70,10 @@
             order: 0;
         }
     }
+
+    @media(max-width: $md) {
+        &__extra {
+            font-size: 3.5vw;
+        }
+    }
 }

@@ -18,11 +18,17 @@
     }
 
     @media(max-width: $lg) {
+        margin-bottom: 10vw;
         justify-content: center;
         align-items: center;
 
         &__image {
             display: none;
         }
+    }
+
+    @media(max-width: $md) {
+        padding-left: 3%;
+        justify-content: flex-start;
     }
 }

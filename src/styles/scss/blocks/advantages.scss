@@ -25,8 +25,15 @@
         max-width: 80%;
 
         &__heading {
-            margin-bottom: 5vw;
+            margin-left: 10%;
+            margin-right: 0;
+            margin-bottom: 8vw;
             font-size: 8vw;
         }
+    }
+
+    @media(max-width: $md) {
+        width: 100%;
+        max-width: 90%;
     }
 }

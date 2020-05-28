@@ -13,8 +13,8 @@
         right: 5%;
         margin: 3px;
         padding: 5px 7px;
-        width: 70px;
-        height: 70px;
+        width: 6.5vw;
+        height: 6.5vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -64,5 +64,28 @@
         &:hover {
           opacity: 1;
         }
+      }
+    }
+
+    @media(max-width: $md) {
+
+      .header__container {
+        right: -47%;
+        width: 47%;
+      }
+
+      .trigger {
+        top: 5%;
+        height: 8vw;
+        width: 8vw;
+        border-radius: 5px;
+
+        &__icon {
+          font-size: 5vw;
+        }
+      }
+
+      .trigger-move {
+        right: 50%;
       }
     }
