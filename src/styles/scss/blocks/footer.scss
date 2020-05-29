@@ -71,6 +71,8 @@
     }
 
     @media(max-width: $lg) {
+        background-color: $color-4;
+
         &__content {
             flex-direction: column;
         }
@@ -84,7 +86,6 @@
             }
 
             &-text {
-                margin: none;
                 font-size: 2.5vw;
             }
         }
@@ -97,6 +98,25 @@
         &__logo {
             height: 7vw;
             font-size: 4vw;
+            background-color: #a1232b;
+        }
+    }
+
+    @media(max-width: $md) {
+
+        &__contact {
+            &-icon {
+                font-size: 7vw;
+            }
+
+            &-text {
+                font-size: 3.5vw;
+            }
+        }
+
+        &__logo {
+            height: 12vw;
+            font-size: 6vw;
         }
     }
 }

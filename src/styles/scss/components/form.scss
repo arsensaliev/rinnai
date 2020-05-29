@@ -29,7 +29,7 @@
 
     &__input {
         margin-bottom: 2vw;
-        padding: 1vw 1.5vw;
+        padding: 0.8vw 1.2vw;
         width: 30vw;
         max-width: 30vw;
         box-sizing: border-box;
@@ -90,6 +90,31 @@
             height: 6vw !important;
             width: 23vw !important;
             font-size: 2.3vw;
+        }
+    }
+
+    @media(max-width: $md) {
+        &__heading {
+            font-size: 9vw;
+        }
+
+        &__description {
+            width: 80%;
+            font-size: 3vw;
+        }
+
+        &__input {
+            padding: 2vw 3vw !important;
+            margin-bottom: 4vw !important;
+            width: 65% !important;
+            max-width: 100% !important;
+            font-size: 3.2vw !important;
+        }
+
+        &__button {
+            height: 8vw !important;
+            width: 32vw !important;
+            font-size: 3.2vw;
         }
     }
 }

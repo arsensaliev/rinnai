@@ -90,4 +90,28 @@
             width: 80%;
         }
     }
+
+    @media(max-width: $md) {
+        height: auto;
+
+        &__red-background {
+            height: 160vw;
+        }
+
+        &__content {
+            height: 160vw;
+        }
+
+        &__heading {
+            font-size: 10vw;
+        }
+
+        &__description {
+            font-size: 4vw;
+        }
+
+        &__facts {
+            width: 90%;
+        }
+    }
 }
