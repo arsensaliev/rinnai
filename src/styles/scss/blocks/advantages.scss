@@ -1,12 +1,39 @@
 .advantages {
+    width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     &__heading {
-        margin-bottom: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 3vw;
         font-size: 3vw;
         color: $color-1;
+    }
+
+    @media(max-width: $xl) {
+        justify-content: center;
+
+        &__heading {
+            margin-bottom: 3vw;
+        }
+    }
+
+    @media(max-width: $lg) {
+        margin: 0;
+        max-width: 80%;
+
+        &__heading {
+            margin-left: 10%;
+            margin-right: 0;
+            margin-bottom: 8vw;
+            font-size: 8vw;
+        }
+    }
+
+    @media(max-width: $md) {
+        width: 100%;
+        max-width: 90%;
     }
 }

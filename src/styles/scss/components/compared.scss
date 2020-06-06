@@ -1,14 +1,17 @@
 .compared {
     width: 40vw;
+    max-width: 800px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
     &__image {
+        width: 100%;
         filter: drop-shadow(0 0 30px $color-4);
 
         &-container {
+            width: 8vw;
             filter: drop-shadow(0 0 20px $color-4);
         }
     }
@@ -43,6 +46,73 @@
 
         &_common {
             width: 18vw;
+        }
+    }
+
+    @media(max-width: $xl) {
+        &__heading {
+            font-size: 2.2vw;
+        }
+
+        &__text {
+            width: 50vw;
+        }
+
+        &__description {
+            width: 30vw;
+            font-size: 1.1vw;
+
+            &_common {
+                width: 25vw !important;
+            }
+        }
+    }
+
+    @media(max-width: $lg) {
+        margin-bottom: 5vw !important;
+        width: 100%;
+        max-width: none;
+
+        &__heading {
+            font-size: 5vw;
+        }
+
+        &__description {
+            width: 100%;
+            font-size: 2vw;
+
+            &_common {
+                width: 100% !important;
+            }
+        }
+
+        &__image {
+            &-container {
+                margin-right: 3vw;
+                width: 15vw;
+            }
+        }
+    }
+
+    @media(max-width: $md) {
+        margin-bottom: 10vw !important;
+
+        &__image {
+            &-container {
+                width: 17vw;
+            }
+        }
+        
+        &__text {
+            width: 65%;
+        }
+        
+        &__heading {
+            font-size: 8vw;
+        }
+
+        &__description {
+            font-size: 3.5vw;
         }
     }
 }

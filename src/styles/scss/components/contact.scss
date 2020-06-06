@@ -23,4 +23,19 @@
         font-size: 0.7vw;
         color: $color-2;
     }
+
+    @media(max-width: $xl) {
+
+        &__number {
+            font-size: 1.15vw;
+        }
+
+        &__text {
+            font-size: 0.87vw;
+        }
+    }
+
+    @media(max-width: $lg) {
+        display: none;
+    }
 }

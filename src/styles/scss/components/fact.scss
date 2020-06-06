@@ -6,12 +6,39 @@
     line-height: 1;
 
     &__number {
-        font-size: 6vw;
+        font-size: 5vw;
         font-weight: bold;
     }
 
     &__text {
         font-size: 1.5vw;
         font-weight: 300;
+    }
+
+    @media(max-width: $xl) {
+        &__text {
+            font-size: 1.8vw;
+        }
+    }
+
+    @media(max-width: $lg) {
+        &__number {
+            font-size: 8vw;
+        }
+
+        &__text {
+            font-size: 3vw;
+        }
+    }
+
+    @media(max-width: $md) {
+        &__number {
+            margin-bottom: 1vw;
+            font-size: 10vw;
+        }
+
+        &__text {
+            font-size: 4vw;
+        }
     }
 }

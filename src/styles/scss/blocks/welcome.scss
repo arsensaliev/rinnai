@@ -21,6 +21,7 @@
     }
 
     &__image {
+        width: 25vw;
         z-index: 1;
     }
 
@@ -31,5 +32,48 @@
         width: 33.5vw;
         background-color: $color-1;
         z-index: 0;
+    }
+
+    @media(max-width: $xl) {
+        &__extra {
+            font-size: 1.4vw;
+        }
+
+        &__text-block {
+            margin-right: 10vw;
+            width: 22vw;
+        }
+    }
+
+    @media(max-width: $lg) {
+        flex-direction: column;
+
+        &__background {
+            display: none;
+        }
+
+        &__text-block {
+            margin: 0;
+            margin-bottom: 5vh;
+            width: 30%;
+            order: 1;
+        }
+
+        &__extra {
+            font-size: 3vw;
+            text-align: center;
+        }
+
+        &__image {
+            height: 45vh !important;
+            width: auto !important;
+            order: 0;
+        }
+    }
+
+    @media(max-width: $md) {
+        &__extra {
+            font-size: 3.5vw;
+        }
     }
 }

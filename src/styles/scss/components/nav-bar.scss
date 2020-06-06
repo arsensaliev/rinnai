@@ -1,5 +1,4 @@
 .nav-bar {
-    margin-right: 7vw;
     width: 30vw;
     height: 100%;
     display: flex;
@@ -13,12 +12,40 @@
         color: $color-1;
         text-decoration: none;
 
-        // &:hover {
-        //     border-bottom: 1px solid $color-1;
-        // }
-
         &_active {
             color: $color-3;
+        }
+    }
+
+    @media(max-width: $xl) {
+        width: 35vw;
+
+        &__link {
+            font-size: 1.2vw;
+        }
+    }
+
+    @media(max-width: $lg) {
+        margin-top: 13vh;
+        margin-left: 5vw;
+        height: 30vh;
+        width: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &__link {
+            font-size: 4vw;
+            letter-spacing: 0.3vw;
+        }
+    }
+
+    @media(max-width: $md) {
+        margin-left: 7vw;
+        height: 50vw;
+
+        &__link {
+            font-size: 5.5vw;
         }
     }
 }

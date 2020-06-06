@@ -1,5 +1,5 @@
 .advantage {
-    margin-bottom: 3vw;
+    margin-bottom: 2.2vw;
     height: auto;
     width: 80%;
     display: flex;
@@ -13,8 +13,8 @@
         &-container {
             margin-top: -10px;
             margin-right: 25px;
-            height: 66px;
-            width: 66px;
+            height: 4vw;
+            width: 4vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -28,7 +28,7 @@
     }
 
     &__heading {
-        margin-bottom: 10px;
+        margin-bottom: 1vw;
         width: 110%;
         font-size: 2vw;
         font-weight: 500;
@@ -41,6 +41,61 @@
 
         &_important {
             color: $color-1;
+        }
+    }
+
+    @media(max-width: $xl) {
+        width: 100%;
+
+        &__heading {
+            font-size: 2.2vw;
+        }
+
+        &__text {
+            font-size: 1.2vw;
+        }
+    }
+
+    @media(max-width: $lg) {
+        margin-bottom: 5vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &__description {
+            width: 75%;
+        }
+
+        &__heading {
+            font-size: 5vw;
+        }
+
+        &__text {
+            font-size: 2.5vw;
+        }
+
+        &__image {
+
+            &-container {
+                height: 10vw;
+                width: 10vw;
+            }
+        }
+    }
+
+    @media(max-width: $md) {
+        &__image {
+            &-container {
+                margin-right: 15px;
+            }
+        }
+
+        &__heading {
+            font-size: 6vw;
+        }
+
+        &__text {
+            font-size: 3.5vw;
         }
     }
 }
